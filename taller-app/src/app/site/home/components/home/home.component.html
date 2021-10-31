@@ -2,7 +2,7 @@
 
 
     <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0" id="sidebarToggle"><i-feather name="menu"></i-feather></button>
-    <h2 style="color: rgb(0, 98, 255);font-weight: bold;margin-left: 5px;margin-right: 5px;"><a [routerLink]="['/home/dashboard']">Administración Talleres</a></h2>
+    <h2 style="color: rgb(0, 98, 255);font-weight: bold;margin-left: 5px;margin-right: 5px;"><a [routerLink]="['/home/dashboard']">Control de registro</a></h2>
     <ul class="navbar-nav align-items-center ms-auto">
         <li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
             <a class="btn btn-icon btn-transparent-dark dropdown-toggle" placement="left" ngbTooltip="Perfil" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="assets/img/illustrations/profiles/profile-3.png" /></a>
@@ -15,13 +15,12 @@
                     </div>
                 </h6>
                 <div class="dropdown-divider"></div>
-                <!-- <a class="dropdown-item" href="javascript:void(0);">
-                    <div class="dropdown-item-icon"><i data-feather="settings"></i></div>
+                <a class="dropdown-item" href="javascript:void(0);" [routerLink]="['/home/users/settings']">
+                    <i-feather name="settings"></i-feather>
                     Cuenta
-                </a> -->
+                </a>
                 <a class="dropdown-item" href="javascript:void(0);" [routerLink]="['/login']">
-                    <div class="dropdown-item-icon"><i data-feather="log-out"></i></div>
-                    Cerrar sesión
+                    <i-feather name="log-out"></i-feather>Cerrar sesión
                 </a>
             </div>
         </li>
