@@ -2,7 +2,7 @@
 
 
     <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0" id="sidebarToggle"><i-feather name="menu"></i-feather></button>
-    <h2 style="color: rgb(0, 98, 255);font-weight: bold;margin-left: 5px;margin-right: 5px;"><a [routerLink]="['/home/dash']">Punto de venta</a></h2>
+    <h2 style="color: rgb(0, 98, 255);font-weight: bold;margin-left: 5px;margin-right: 5px;"><a [routerLink]="['/home/dashboard']">Administración Talleres</a></h2>
     <ul class="navbar-nav align-items-center ms-auto">
         <li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
             <a class="btn btn-icon btn-transparent-dark dropdown-toggle" placement="left" ngbTooltip="Perfil" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="assets/img/illustrations/profiles/profile-3.png" /></a>
@@ -10,7 +10,7 @@
                 <h6 class="dropdown-header d-flex align-items-center">
                     <img class="dropdown-user-img" src="assets/img/illustrations/profiles/profile-3.png" />
                     <div class="dropdown-user-details">
-                        <div class="dropdown-user-details-name">Christian</div>
+                        <div class="dropdown-user-details-name">Christian Alcantara</div>
                         <div class="dropdown-user-details-email">Christian_pria@hotmail.com</div>
                     </div>
                 </h6>
@@ -19,7 +19,7 @@
                     <div class="dropdown-item-icon"><i data-feather="settings"></i></div>
                     Cuenta
                 </a> -->
-                <a class="dropdown-item" href="javascript:void(0);">
+                <a class="dropdown-item" href="javascript:void(0);" [routerLink]="['/login']">
                     <div class="dropdown-item-icon"><i data-feather="log-out"></i></div>
                     Cerrar sesión
                 </a>
@@ -37,91 +37,161 @@
             <div class="sidenav-menu">
                 <div class="nav accordion" id="accordionSidenav">
 
-                    <div class="sidenav-menu-heading">Administrar...</div>
+                    <div class="sidenav-menu-heading">Talleres disponibles</div>
 
                     <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="false" aria-controls="collapseAdmin">
-                        <div class="nav-link-icon"><i style="color: rgb(0, 98, 255);" data-feather="users"></i></div>
-                        Clientes
+                        <div class="nav-link-icon"><i class="far fa-grin-beam-sweat" style="color:cornflowerblue"></i></div>
+                        Culturales
                         <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
 
                     <div class="collapse" id="collapseAdmin" data-parent="#accordionSidenav">
 
                         <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPages">
+                            <a class="nav-link" [routerLink]="['/home/taller']" routerLinkActive="active">
+                                <div class="nav-link-icon"></div>
+                                Artes literarias
+                            </a>
+
                             <a class="nav-link" [routerLink]="['/home/clients','list']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="book-open"></i></div>
-                                Lista
+                                <div class="nav-link-icon"></div>
+                                Pintura y dibujo
                             </a>
 
-
-                            <a class="nav-link" [routerLink]="['/home/clients','insert-client']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:rgb(0, 98, 255)" data-feather="user-plus"></i></div>
-                                Agregar nuevo
+                            <a class="nav-link" [routerLink]="['/home/clients','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"></div>
+                                Teatro en atril
                             </a>
 
+                            <a class="nav-link" [routerLink]="['/home/clients','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"></div>
+                                Danza folclórica
+                            </a>
 
+                            <a class="nav-link" [routerLink]="['/home/clients','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"></div>
+                                Salsa básica
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/clients','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"></div>
+                                Bachata
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/clients','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"></div>
+                                HIP-HOP
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/clients','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"></div>
+                                Zancos
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/clients','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"></div>
+                                Canto
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/clients','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"></div>
+                                Rondalla
+                            </a>
 
 
                         </nav>
                     </div>
 
                     <a class="nav-link collapsed" data-toggle="collapse" data-target="#sales" aria-expanded="false" aria-controls="collapseAdmin">
-                        <div class="nav-link-icon"><i style="color: green;" data-feather="dollar-sign"></i></div>
-                        Ventas
+                        <div class="nav-link-icon"><i class="fas fa-futbol" style="color: black;"></i></div>
+                        Deportivos
                         <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
 
                     <div class="collapse" id="sales" data-parent="#accordionSidenav">
 
                         <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPages">
-                            <a class="nav-link" [routerLink]="['/home/sales','list']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="archive"></i></div>
-                                Lista
-                            </a>
-
-
-                            <a class="nav-link" [routerLink]="['/home/sales','new-sale']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:rgb(0, 98, 255)" data-feather="shopping-bag"></i></div>
-                                Nueva
-                            </a>
-
-
-
-                            <!-- <a class="nav-link" [routerLink]="['/home/sales','new-sale-beta']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i data-feather="shopping-bag"></i></div>
-                                Beta
-                            </a> -->
-
-                            <a class="nav-link" [routerLink]="['/home/sales','pending-payments']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:green;" data-feather="loader"></i></div>
-                                Pagos pendientes
-                            </a>
 
                             <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseLayoutsStarterTemplates" aria-expanded="false" aria-controls="collapseLayoutsStarterTemplates">
                                 <div class="nav-link-icon"><i style="color: red;" data-feather="rotate-cw"></i></div>
-                                Devoluciones
+                                Futbol
                                 <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayoutsStarterTemplates">
                                 <nav class="sidenav-menu-nested nav">
                                     <a class="nav-link" [routerLink]="['/home/clients','historial-returns']" routerLinkActive="active">
                                         <div class="nav-link-icon"><i data-feather="list"></i></div>
-                                        Historial
+                                        Soccer Varonil
                                     </a>
 
                                     <a class="nav-link" [routerLink]="['/home/clients','new-return']" routerLinkActive="active">
                                         <div class="nav-link-icon"><i style="color:rgb(0, 98, 255)" data-feather="plus"></i></div>
-                                        Nueva
+                                        Soccer Femenil
+                                    </a>
+
+                                    <a class="nav-link" [routerLink]="['/home/clients','new-return']" routerLinkActive="active">
+                                        <div class="nav-link-icon"><i style="color:rgb(0, 98, 255)" data-feather="plus"></i></div>
+                                        Futbol 7
                                     </a>
                                 </nav>
                             </div>
+
+                            <a class="nav-link" [routerLink]="['/home/sales','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="archive"></i></div>
+                                Handball
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/sales','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="archive"></i></div>
+                                Volibol
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/sales','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="archive"></i></div>
+                                Basquetbol
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/sales','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="archive"></i></div>
+                                Beisbol
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/sales','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="archive"></i></div>
+                                Softbol
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/sales','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="archive"></i></div>
+                                Atletismo
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/sales','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="archive"></i></div>
+                                Crossfit
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/sales','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="archive"></i></div>
+                                Insanity
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/sales','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="archive"></i></div>
+                                Jodo
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/sales','list']" routerLinkActive="active">
+                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="archive"></i></div>
+                                Karate Do
+                            </a>
 
                         </nav>
                     </div>
 
                     <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseprod" aria-expanded="false" aria-controls="collapseprod">
-                        <div class="nav-link-icon"><i style="color:indigo;" data-feather="shopping-bag"></i></div>
-                        Productos
+                        <div class="nav-link-icon"><i class="fas fa-heartbeat" style="color: red;"></i></div>
+                        Salud
                         <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
 
@@ -129,136 +199,55 @@
                         <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPages">
                             <a class="nav-link" [routerLink]="['/home/products','new-product']" routerLinkActive="active">
                                 <div class="nav-link-icon"><i style="color:rgb(0, 98, 255)" data-feather="plus-circle"></i></div>
-                                Agregar Nuevo
+                                Nútrete y muévete
                             </a>
 
-                            <a class="nav-link" [routerLink]="['/home/products','stock']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:steelblue;" data-feather="list"></i></div>
-                                Inventario
+                            <a class="nav-link" [routerLink]="['/home/products','new-product']" routerLinkActive="active">
+                                <div class="nav-link-icon"><i style="color:rgb(0, 98, 255)" data-feather="plus-circle"></i></div>
+                                Prevención de abuso y uso de drogas
                             </a>
 
-                            <a class="nav-link" [routerLink]="['/home/products','all-product']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="archive"></i></div>
-                                Lista
+                            <a class="nav-link" [routerLink]="['/home/products','new-product']" routerLinkActive="active">
+                                <div class="nav-link-icon"><i style="color:rgb(0, 98, 255)" data-feather="plus-circle"></i></div>
+                                ABC de los primeros auxilios
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/products','new-product']" routerLinkActive="active">
+                                <div class="nav-link-icon"><i style="color:rgb(0, 98, 255)" data-feather="plus-circle"></i></div>
+                                Las 5 heridas de la infancia
                             </a>
 
                         </nav>
                     </div>
 
-
-                    <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseprov" aria-expanded="false" aria-controls="collapseprov">
-                        <div class="nav-link-icon"><i style="color:darkslateblue;" data-feather="truck"></i></div>
-                        Proveedores
-                        <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                    </a>
-
-                    <div class="collapse" id="collapseprov" data-parent="#accordionSidenav">
-                        <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPages">
-                            <a class="nav-link" [routerLink]="['/home/providers','list']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="book-open"></i></div>
-                                Lista
-                            </a>
-
-                            <a class="nav-link" [routerLink]="['/home/providers/','new-provider']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:rgb(0, 98, 255)" data-feather="user-plus"></i></div>
-                                Agregar nuevo
-                            </a>
-
-
-                            <a class="nav-link" [routerLink]="['/home/providers/','new-invoice']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:purple;" data-feather="package"></i></div>
-                                Registrar entradas
-                            </a>
-
-                            <a class="nav-link" [routerLink]="['/home/providers/','list-invoice']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:steelblue;" data-feather="folder"></i></div>
-                                Detalle de entradas
-                            </a>
-
-                            <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseDevProv" aria-expanded="false" aria-controls="collapseDevProv">
-                                <div class="nav-link-icon"><i style="color: red;" data-feather="rotate-cw"></i></div>
-                                Devoluciones
-                                <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapseDevProv">
-                                <nav class="sidenav-menu-nested nav">
-                                    <a class="nav-link" [routerLink]="['/home/providers','historial-returns']" routerLinkActive="active">
-                                        <div class="nav-link-icon"><i data-feather="list"></i></div>
-                                        Historial
-                                    </a>
-
-                                    <a class="nav-link" [routerLink]="['/home/providers','insert-return']" routerLinkActive="active">
-                                        <div class="nav-link-icon"><i style="color:rgb(0, 98, 255)" data-feather="plus"></i></div>
-                                        Nueva
-                                    </a>
-                                </nav>
-                            </div>
-
-                        </nav>
-                    </div>
-
-                    <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseusers" aria-expanded="false" aria-controls="collapseusers">
-                        <div class="nav-link-icon"><i style="color:orangered;" data-feather="meh"></i></div>
+                    <div class="sidenav-menu-heading">Administración</div>
+                    <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseUs" aria-expanded="false" aria-controls="collapseUs">
+                        <div class="nav-link-icon">
+                            <i-feather name="users" style="color: blue;"></i-feather>
+                        </div>
                         Usuarios
                         <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
 
-                    <div class="collapse" id="collapseusers" data-parent="#accordionSidenav">
+                    <div class="collapse" id="collapseUs" data-parent="#accordionSidenav">
+
                         <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPages">
-                            <a class="nav-link" [routerLink]="[ '/home/users','list']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:lightsalmon;" data-feather="book-open"></i></div>
+                            <a class="nav-link" [routerLink]="['/home/users','new-user']" routerLinkActive="active">
+                                <div class="nav-link-icon">
+                                    <i-feather name="user-plus"></i-feather>
+                                </div>
+                                Agregar usuario
+                            </a>
+
+                            <a class="nav-link" [routerLink]="['/home/users','list-users']" routerLinkActive="active">
+                                <div class="nav-link-icon">
+                                    <i-feather name="clipboard"></i-feather>
+                                </div>
                                 Lista
                             </a>
 
-                            <a class="nav-link" [routerLink]="[ '/home/users/','new-user']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:rgb(0, 98, 255)" data-feather="user-plus"></i></div>
-                                Agregar Nuevo
-                            </a>
-
                         </nav>
                     </div>
-
-
-                    <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseCatalog" aria-expanded="false" aria-controls="collapseCatalog">
-                        <div class="nav-link-icon"><i style="color:cornflowerblue;" data-feather="paperclip"></i></div>
-                        Catálogos
-                        <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                    </a>
-
-                    <div class="collapse" id="collapseCatalog" data-parent="#accordionSidenav">
-                        <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPages">
-
-
-                            <a class="nav-link" [routerLink]="[ '/home/catalogs','brands']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:steelblue;" data-feather="tag"></i></div>
-                                Marcas
-                            </a>
-
-                            <a class="nav-link" [routerLink]="[ '/home/catalogs/','categories']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:steelblue;" data-feather="package"></i></div>
-                                Categorias
-                            </a>
-
-                            <a class="nav-link" [routerLink]="[ '/home/catalogs/','paymentmethods']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:steelblue;" data-feather="credit-card"></i></div>
-                                Métodos de pago
-                            </a>
-
-                            <a class="nav-link" [routerLink]="[ '/home/catalogs/','reason']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:steelblue;" data-feather="trending-down"></i></div>
-                                Razones de devolución cliente
-                            </a>
-
-                            <a class="nav-link" [routerLink]="[ '/home/catalogs/','reason-provider']" routerLinkActive="active">
-                                <div class="nav-link-icon"><i style="color:steelblue;" data-feather="thumbs-down"></i></div>
-                                Razones de devolución proveedor
-                            </a>
-
-                        </nav>
-                    </div>
-
-
-
 
                 </div>
 
@@ -266,7 +255,7 @@
             <div class="sidenav-footer">
                 <div class="sidenav-footer-content">
                     <div class="sidenav-footer-subtitle">Inició sesión como:</div>
-                    <div class="sidenav-footer-title">Christian</div>
+                    <div class="sidenav-footer-title">Christian Alcantara</div>
                 </div>
             </div>
         </nav>
