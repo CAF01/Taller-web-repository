@@ -1,0 +1,37 @@
+<div>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Información de alumno</h4>
+    </div>
+    <div class="modal-body">
+
+        <!-- <p>El usuario seleccionado no tiene ninguna dirección asignada.</p>  -->
+        <div class="row justify-content-center">
+            <div class="row gx-3">
+                <div class="mb-3 col-md-6">
+                    <label class="small mb-1">División</label>
+                    <input class="form-control" type="text" disabled value="Tecnologías de la Información" />
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label class="small mb-1">Area</label>
+                    <input class="form-control" type="text" disabled value="Desarrollo de Software Multiplataforma" />
+                </div>
+            </div>
+            <div class="row gx-3">
+                <div class="mb-3 col-md-6">
+                    <label class="small mb-1">Grupo</label>
+                    <input type="text" class="form-control" disabled value="7° B">
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label class="small mb-1">Correo</label>
+                    <input class="form-control" type="text" disabled value="UTP0139519@ALUMNO.UTPUEBLA.EDU.MX" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-success" (click)="modal.close()">
+          Cerrar
+        </button>
+    </div>
+</div>
