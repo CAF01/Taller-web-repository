@@ -1,0 +1,448 @@
+<header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+    <div class="container-xl px-4">
+        <div class="page-header-content pt-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto mt-4">
+                    <h1 class="page-header-title">
+                        <div class="page-header-icon"><i data-feather="database"></i></div>
+                        Nombre de taller - "ARTES LITERARIAS"
+                    </h1>
+                    <div class="page-header-subtitle">Lista de alumnos registrados</div>
+                </div>
+                <div class="dropdown col-auto mt-8">
+                    <button class="btn btn-warning dropdown-toggle" placement="top" ngbTooltip="Actividad" id="dropdownFadeInUp" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Estado de registro</button>
+                    <div class="dropdown-menu animated--fade-in-up" aria-labelledby="dropdownFadeInUp">
+                        <a class="dropdown-item">Todos</a>
+                        <a class="dropdown-item">Registrados</a>
+                        <a class="dropdown-item">Opcionales</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container-xl px-4 mt-n10">
+    <div class="card-header d-flex justify-content-end">
+        <form class="col-md-3">
+            <div class="input-group input-group-joined input-group-solid">
+                <input class="form-control pe-0" type="search" placeholder="Buscar Mátricula" aria-label="Search" />
+                <div class="input-group-text"><a href="javascript:void(0);" placement="top" ngbTooltip="Buscar"><i class="fas fa-search"></i></a></div>
+            </div>
+        </form>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">Alumnos</div>
+        <div class="card-body">
+            <table id="datatable" class="table">
+                <thead>
+                    <tr>
+                        <th>Mátricula</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Teléfono</th>
+                        <th>Fecha de registro</th>
+                        <th>Status</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Mátricula</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Teléfono</th>
+                        <th>Fecha de registro</th>
+                        <th>Status</th>
+                        <th>Opciones</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>UTP0138499</td>
+                        <td>Christian</td>
+                        <td>Alcantara</td>
+                        <td>2221907079</td>
+                        <td>2011/04/25</td>
+                        <td>
+                            <div class="badge bg-success text-white rounded-pill">Registrado</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0138498</td>
+                        <td>Alejandro</td>
+                        <td>Díaz</td>
+                        <td>222358492</td>
+                        <td>2011/07/25</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0138497</td>
+                        <td>Aldo</td>
+                        <td>Villanueva</td>
+                        <td>2224528449</td>
+                        <td>2009/01/12</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0138496</td>
+                        <td>Tamara Jaelyn</td>
+                        <td>Ruiz</td>
+                        <td>2223442412</td>
+                        <td>2012/03/29</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0138495</td>
+                        <td>Lara</td>
+                        <td>Bell</td>
+                        <td>3223245512</td>
+                        <td>2008/11/28</td>
+                        <td>
+                            <div class="badge bg-success text-white rounded-pill">Registrado</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0138494</td>
+                        <td>Anita la</td>
+                        <td>Huerfanita</td>
+                        <td>23442814219</td>
+                        <td>2012/12/02</td>
+                        <td>
+                            <div class="badge bg-success text-white rounded-pill">Registrado</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0138493</td>
+                        <td>Pablo</td>
+                        <td>Casas</td>
+                        <td>2203421494</td>
+                        <td>2012/08/06</td>
+                        <td>
+                            <div class="badge bg-success text-white rounded-pill">Registrado</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0138492</td>
+                        <td>Jennifer</td>
+                        <td>Alondrina</td>
+                        <td>3922961222</td>
+                        <td>2010/10/14</td>
+                        <td>
+                            <div class="badge bg-success text-white rounded-pill">Registrado</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0138491</td>
+                        <td>Natalia</td>
+                        <td>Hannan</td>
+                        <td>2221232425</td>
+                        <td>2009/09/15</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0138490</td>
+                        <td>Oscar</td>
+                        <td>Ruiz</td>
+                        <td>2222779312</td>
+                        <td>2008/12/13</td>
+                        <td>
+                            <div class="badge bg-success text-white rounded-pill">Registrado</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0000000</td>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>222242498</td>
+                        <td>2008/12/19</td>
+                        <td>
+                            <div class="badge bg-success text-white rounded-pill">Registrado</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0000000</td>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>222242498</td>
+                        <td>2008/12/19</td>
+                        <td>
+                            <div class="badge bg-success text-white rounded-pill">Registrado</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>UTP0000000</td>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>222242498</td>
+                        <td>2011/05/03</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0000000</td>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>222242498</td>
+                        <td>2011/05/03</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0000000</td>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>222242498</td>
+                        <td>2011/05/03</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0000000</td>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>222242498</td>
+                        <td>2011/05/03</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0000000</td>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>222242498</td>
+                        <td>2011/05/03</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0000000</td>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>222242498</td>
+                        <td>2011/05/03</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0000000</td>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>222242498</td>
+                        <td>2011/05/03</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0000000</td>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>222242498</td>
+                        <td>2011/05/03</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0000000</td>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>222242498</td>
+                        <td>2011/05/03</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0000000</td>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>222242498</td>
+                        <td>2011/05/03</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTP0000000</td>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                        <td>222242498</td>
+                        <td>2011/05/03</td>
+                        <td>
+                            <div class="badge bg-warning rounded-pill">Opcional</div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);">
+                                <i-feather name="external-link" class="big"></i-feather>
+                            </a>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="dataTable-bottom">
+                <div class="dataTable-info">Showing 1 to 10 of 57 entries</div>
+                <nav class="dataTable-pagination">
+                    <ul class="dataTable-pagination-list">
+                        <li class="active"><a href="javascript:void(0);" data-page="1">1</a></li>
+                        <li class=""><a href="javascript:void(0);" data-page="2">2</a></li>
+                        <li class=""><a href="javascript:void(0);" data-page="3">3</a></li>
+                        <li class=""><a href="javascript:void(0);" data-page="4">4</a></li>
+                        <li class=""><a href="javascript:void(0);" data-page="5">5</a></li>
+                        <li class=""><a href="javascript:void(0);" data-page="6">6</a></li>
+                        <li class="pager"><a href="javascript:void(0);" data-page="2">›</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
